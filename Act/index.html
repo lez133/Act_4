@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="css/in.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Home</div>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links">
+        <li>
+            <a href="index.html">
+              <i class="fa fa-home" aria-hidden="true"></i> Home
+            </a>
+          </li>          
+          <li>
+            <a href="about.html">
+              <i class="fa fa-user" aria-hidden="true"></i> About
+            </a>
+          </li> 
+          <li>
+            <a href="product.html">
+              <i class="fa fa-check" aria-hidden="true"></i> Services
+            </a>
+          </li> 
+          <li>
+            <a href="Contact.html">
+              <i class="fa fa-phone" aria-hidden="true"></i> Contact
+            </a>
+          </li>
+    </ul>
+  </nav>
+
+  <section class="profile">
+    <img src="img.jpg" alt="Profile Picture">
+    <h1>Lester M. Orogan</h1>
+    <p>Hello! My name is Lester Orogan. I am a 3rd-year BSIT Student at Southern Leyte State University.</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Gaming</li>
+      <li>Browsing</li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+      document.body.classList.toggle('menu-open');
+    }
+  </script>
+</body>
+</html>

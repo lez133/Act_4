@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Contact</div>
+        <div class="menu-icon">&#9776;</div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">
+                  <i class="fa fa-home" aria-hidden="true"></i> Home
+                </a>
+              </li>          
+              <li>
+                <a href="about.html">
+                  <i class="fa fa-user" aria-hidden="true"></i> About
+                </a>
+              </li> 
+              <li>
+                <a href="product.html">
+                  <i class="fa fa-check" aria-hidden="true"></i> Services
+                </a>
+              </li> 
+              <li>
+                <a href="Contact.html">
+                  <i class="fa fa-phone" aria-hidden="true"></i> Contact
+                </a>
+              </li>
+        </ul>
+    </nav>
+    
+    <section class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="/submit" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" rows="4" id="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
